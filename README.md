@@ -8,17 +8,18 @@ https://Divyatmika28.github.io/meme-gen-react-app
 
 # How to publish apps on github steps? 
 Step 1 : 
-> Add *"homepage": "https://Username.github.io/ProjectName"* in package.json
-> Add  "predeploy": "npm run build",
+    a. Add in package.json "homepage": "https://Username.github.io/ProjectName"* 
+    b. Add in scripts section in package.json
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    in scripts section in package.json 
+     
     
 Step 2: 
-> Navigate to your project folder and open terminal
-> git remote add origin https://github.com/Username/RepoName 
-> git remote set-url origin https://github.com/Username/RepoName 
-> npm run build
-> npm run deploy
+    a.  Navigate to your project folder and open terminal
+    b. git remote add origin https://github.com/Username/RepoName 
+    c. git remote set-url origin https://github.com/Username/RepoName 
+    d. npm run build
+    e. npm run deploy
 
 If there is an error while running deploy command first run "npm install gh-pages --save-dev" and then run npm run deploy
     
